@@ -34,11 +34,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <LanguageProvider>
-        {/* Outer main Container */}
+          {/* Outer main Container */}
           <div className="min-h-screen border border-white/20 rounded-md p-4 bg-white backdrop-blur-sm">
 
-          {/* Split Container */}
-          <div className="grid grid-cols-[35%_65%] divider-x divide-white/10 min-h-[inherit]">
+            {/* Split Container */}
+            <div className="grid grid-cols-[35%_65%] divider-x divide-white/10 min-h-[inherit]">
 
               {/* Static section on the left */}
               <div className="p-8 flex flex-col justify-top items-center">
@@ -49,10 +49,10 @@ export default function RootLayout({
               </div>
 
               {/* Dynamic section on the right */}
-              <div className="p-8 flex flex-col justify-center">
+              <div className="p-8 flex flex-col justify-start gap-2">
                 {children}
               </div>
-          </div>
+            </div>
           </div>
         </LanguageProvider>
       </body>

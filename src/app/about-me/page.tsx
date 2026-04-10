@@ -10,7 +10,7 @@ const AboutMePage = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_100px] gap-8 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_40px] gap-8 items-start">
         <div>
           <h1 className="font-salsa text-4xl font-bold mb-4 text-amber-300">{t.aboutMe.name}</h1>
           <h4 className="font-salsa text-1xl font-bold mb-4 text-amber-500">{t.aboutMe.title}</h4>
@@ -19,7 +19,7 @@ const AboutMePage = () => {
           </p>
         </div>
         {/* Navigations */}
-        <div className="flex justify-end">
+        <div className="flex justify-end items-top">
           <NavigationPlain />
         </div>
 

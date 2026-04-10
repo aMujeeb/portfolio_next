@@ -91,7 +91,7 @@ export interface ILanguageTexts {
 }
 export const englishTexts: ILanguageTexts = {
 	aboutMe: {
-		name: "John DoeReMi",
+		name: "Mujee",
 		title: "Front-End Developer",
 		description:
 			"As a passionate Full Stack Web and Mobile Developer, I bring over two years of comprehensive experience in the software development lifecycle, including project planning, UI/UX design, development, testing, deployment, and ongoing maintenance. My ability to quickly adapt and learn new technologies makes me a valuable asset to any team, and I am confident in my capacity to contribute effectively to your company's success.",
@@ -448,7 +448,7 @@ export const englishTexts: ILanguageTexts = {
 
 export const frenchTexts: ILanguageTexts = {
 	aboutMe: {
-		name: "John DoeReMi",
+		name: "Mujee",
 		title: "Développeur Front-End",
 		description:
 			"En tant que développeur Full Stack Web et Mobile passionné, j'apporte plus de deux ans d'expérience complète dans le cycle de vie du développement logiciel, y compris la planification de projet, la conception UI/UX, le développement, les tests, le déploiement et la maintenance continue. Ma capacité à m'adapter rapidement et à apprendre de nouvelles technologies fait de moi un atout précieux pour toute équipe, et je suis confiant dans ma capacité à contribuer efficacement au succès de votre entreprise.",
