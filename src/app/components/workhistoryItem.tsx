@@ -4,7 +4,7 @@ type WorkHistoryItemType = ILanguageTexts["workHistory"]["workHistoryList"][0];
 
 const WorkHistoryItem = ({ historyItem }: { historyItem: WorkHistoryItemType }) => {
     return (
-        <div className="grid grid-cols-[30%_70%] divider-x divide-white/10 min-h-[inherit]">
+        <div className="grid grid-cols-[30%_70%] divider-x divide-white/10">
             {/* Company details */}
             <div className="flex flex-col">
                 <h2 className="text-xl font-bold text-amber-800 font-salsa">{historyItem.companyName}</h2>
