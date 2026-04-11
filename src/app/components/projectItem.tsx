@@ -14,18 +14,18 @@ const ProjectItem = ({ project }: { project: any }) => {
 
     return (
         <div key={project.id} className="mb-4">
-            <h2 className="text-amber-300 mt-4 text-4xl font-salsa">{project.name}</h2>
-            <p className="text-amber-300 mt-2 text-2xl">{project.description}</p>
+            <h2 className="text-amber-300 mt-4 text-3xl font-salsa">{project.name}</h2>
+            <p className="text-amber-300 mt-2 text-1xl">{project.description}</p>
 
-            <p className="mt-2 text-2xl text-blue-600">Functionalities</p>
+            <p className="mt-2 text-1xl text-blue-600">Functionalities</p>
             <ul className="list-disc list-inside mt-2 text-amber-300">
                 {project.functionality.map((func, index) => (
-                    <li key={index} className="text-xl">{func}</li>
+                    <li key={index} className="text-2xs">{func}</li>
                 ))}
             </ul>
 
-            <p className="mt-2 text-2xl text-blue-600">Tech Stack:</p>
-            <p className="mt-2 text-xl text-green-700">
+            <p className="mt-2 text-1xl text-blue-600">Tech Stack:</p>
+            <p className="mt-2 text-3xs text-green-700">
                 {project.technologies.map((tech) => tech.name).join(', ')}
             </p>
 
