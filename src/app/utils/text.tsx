@@ -1,6 +1,6 @@
 import { JSX } from "react";
 import { SKILLS } from "./skills";
-const { react, html, sass, typescipt, redux, github, jest, styledComponnets } =
+const { react, html, sass, typescipt, redux, github, jest, styledComponnets, android } =
 	SKILLS;
 
 export interface ILanguageTexts {
@@ -27,6 +27,7 @@ export interface ILanguageTexts {
 		title: string;
 		viewWorkHistory: string;
 		workHistoryList: {
+			id: string;
 			companyName: string;
 			companyLogo: JSX.Element | string;
 			jobTitle: string;
@@ -294,6 +295,7 @@ export const englishTexts: ILanguageTexts = {
 		viewWorkHistory: "View Full Work History",
 		workHistoryList: [
 			{
+				id: "amazon",
 				companyName: "Amazon, Inc",
 				companyLogo: "🖌️",
 				jobTitle: "Senior Frontend Engineer",
@@ -321,6 +323,7 @@ export const englishTexts: ILanguageTexts = {
 				],
 			},
 			{
+				id: "pixelforge",
 				companyName: "PixelForge Studios",
 				companyLogo: "🖌️",
 				jobTitle: "Lead UI/UX Developer",
@@ -347,6 +350,7 @@ export const englishTexts: ILanguageTexts = {
 				],
 			},
 			{
+				id: "healthsync",
 				companyName: "HealthSync Solutions",
 				companyLogo: "💡",
 				jobTitle: "Full Stack Developer",
@@ -370,9 +374,11 @@ export const englishTexts: ILanguageTexts = {
 					github,
 					jest,
 					styledComponnets,
+					android
 				],
 			},
 			{
+				id: "ecotrack",
 				companyName: "EcoTrack Analytics",
 				companyLogo: "🌱",
 				jobTitle: "Frontend Engineer",
@@ -567,6 +573,7 @@ export const frenchTexts: ILanguageTexts = {
 		viewWorkHistory: "Voir l'historique complet",
 		workHistoryList: [
 			{
+				id: "amazon",
 				companyName: "Amazon, Inc",
 				companyLogo: "🖌️",
 				jobTitle: "Ingénieur Frontend Senior",
@@ -594,6 +601,7 @@ export const frenchTexts: ILanguageTexts = {
 				],
 			},
 			{
+				id: "pixelforge",
 				companyName: "PixelForge Studios",
 				companyLogo: "🖌️",
 				jobTitle: "Développeur UI/UX Principal",
@@ -620,6 +628,7 @@ export const frenchTexts: ILanguageTexts = {
 				],
 			},
 			{
+				id: "healthsync",
 				companyName: "HealthSync Solutions",
 				companyLogo: "💡",
 				jobTitle: "Développeur Full Stack",
@@ -646,6 +655,7 @@ export const frenchTexts: ILanguageTexts = {
 				],
 			},
 			{
+				id: "ecotrack",
 				companyName: "EcoTrack Analytics",
 				companyLogo: "🌱",
 				jobTitle: "Ingénieur Frontend",
