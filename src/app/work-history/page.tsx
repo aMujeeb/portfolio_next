@@ -6,10 +6,10 @@ import { ILanguageTexts } from "../utils/text";
 
 type WorkHistoryItemType = ILanguageTexts["workHistory"]["workHistoryList"][0];
 
-const WorkHistory = () =>  {
-     const { t } = useLanguage();
+const WorkHistory = () => {
+    const { t } = useLanguage();
     return (
-       <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
             {t.workHistory.workHistoryList.map((historyItem: WorkHistoryItemType) => (
                 <WorkHistoryItem key={historyItem.id} historyItem={historyItem} />
             ))}

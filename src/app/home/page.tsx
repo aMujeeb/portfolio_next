@@ -49,6 +49,10 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <div className="flex flex-row items-center mt-8">
+        <p className="text-2xl font-bold text-gray-600">Education</p>
+        <Link href="/education" className="ml-8 px-5 py-2.5 bg-amber-400 text-white rounded-lg hover:bg-amber-500 transition duration-300">View All</Link>
+      </div>
     </div>
   );
 };
