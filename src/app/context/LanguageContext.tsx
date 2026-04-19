@@ -11,7 +11,7 @@ interface LanguageContextProps {
   t: typeof englishTexts | typeof frenchTexts;
 }
 
-const LanguageContext = createContext<LanguageContextTypes | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>('en');

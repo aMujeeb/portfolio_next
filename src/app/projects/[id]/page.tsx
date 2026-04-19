@@ -14,18 +14,21 @@ const ProjectItemDetailsPage = ({ params }: { params: Promise<{ id: string }> })
 
     const [currentImage, setCurrentImage] = useState(0);
 
+    // Find the actual project object from the language context where the ID matches
+    const project = t.projects.projectList.find(({ id }: { id: string }) => id === projectId);
+    
     const nextImage = (e: MouseEvent) => {
         e.stopPropagation();
+        if (!project) return;
         setCurrentImage((prev) => (prev === project.images.length - 1 ? 0 : prev + 1));
     };
 
     const prevImage = (e: MouseEvent) => {
         e.stopPropagation();
+        if (!project) return;
         setCurrentImage((prev) => (prev === 0 ? project.images.length - 1 : prev - 1));
     };
 
-    // Find the actual project object from the language context where the ID matches
-    const project = t.projects.projectList.find(({ id }: { id: string }) => id === projectId);
 
     if (!project) {
         return notFound();
